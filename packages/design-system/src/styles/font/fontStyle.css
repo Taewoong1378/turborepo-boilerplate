@@ -1,0 +1,6 @@
+body {
+	/* 사용하는 폰트 추가 */
+	/* font-family: "Mulish", sans-serif; */
+	color: #000000;
+	font-weight: var(--regular);
+}

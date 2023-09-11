@@ -1,0 +1,30 @@
+.checkboxWithLabelWrap {
+	display: flex;
+	gap: 6px;
+	min-height: 30px;
+	align-items: center;
+	padding: 0 6px;
+
+	/* @fixme 임시 설정 (여러 워크스페이스에서 ds 를 import 하면서 이전 스타일로 적용되는 이슈가 있음) */
+	height: unset !important;
+}
+
+.checkbox {
+	width: 16px;
+	height: 16px;
+	align-self: flex-start;
+	padding-top: 7px;
+}
+
+.checkboxLabel {
+	font-size: var(--font-p4);
+	line-height: var(--line-height-p4);
+	font-weight: var(--medium);
+	color: var(--greyScale10);
+	cursor: pointer;
+	padding: 6px 0;
+}
+
+.checkboxLabel.disabled {
+	cursor: not-allowed;
+}

@@ -1,0 +1,105 @@
+.checkboxLabelWrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 6px;
+	line-height: 20px;
+}
+
+.checkboxWrapper {
+	position: relative;
+	height: 16px;
+	width: 16px;
+	text-align: center;
+	display: inline-block;
+	flex-shrink: 0;
+}
+
+.checkboxWrapper input {
+	position: absolute;
+	opacity: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+}
+
+.checkboxWrapper input:focus + label {
+	outline: 2px solid #e2eeff;
+}
+
+.checkbox {
+	border-radius: 5px;
+	border: 1px solid #cbcbd7;
+	width: 16px;
+	cursor: pointer;
+	vertical-align: super;
+	height: 16px;
+	position: absolute;
+	left: 0;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	display: inline-block;
+}
+
+input[readonly] + .checkbox {
+	cursor: default;
+}
+
+.iconWrapper {
+	position: absolute;
+	top: -2px;
+	left: -3px;
+	right: 0;
+	width: 0;
+	z-index: 1;
+	overflow: hidden;
+	height: 16px;
+	transition: width 300ms;
+}
+
+.iconWrapper svg {
+	position: absolute;
+	left: 0;
+}
+
+.checkboxWrapper input:disabled + label {
+	background-color: #edeff3;
+}
+
+.checkboxWrapper input:disabled + .checkbox {
+	cursor: not-allowed;
+}
+
+.indeterminateIcon {
+	position: absolute;
+	top: 4px;
+	width: 6px;
+	transition: opacity 0.15s ease-in-out;
+	left: 4px;
+	z-index: 1;
+	background-color: #ffffff;
+	display: inline-block;
+}
+
+.checkboxWrapper input:disabled + label .indeterminateIcon {
+	background-color: #edeff3;
+}
+
+.indeterminateIcon::after {
+	width: 6px;
+	content: "";
+	display: block;
+	border-radius: 2px;
+	height: 6px;
+	background-color: #87879f;
+}
+
+.checkboxWrapper input:checked + label > div {
+	width: 16px;
+}
+
+.labelText {
+	font-size: 11px;
+	line-height: 13px;
+	font-weight: 500;
+}

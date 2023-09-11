@@ -1,0 +1,20 @@
+{
+  "name": "template",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "start": "next start",
+    "lint": "next lint",
+    "build": "ts-node ../../packages/design-system/src/scripts/create-icon-mapping.ts && next build",
+    "tsc:check": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@svgr/webpack": "^6.5.1",
+    "next-compose-plugins": "^2.2.1"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^13.4.13",
+    "webpack-shell-plugin-next": "^2.3.1"
+  }
+}
