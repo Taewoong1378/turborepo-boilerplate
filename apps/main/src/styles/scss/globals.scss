@@ -1,12 +1,12 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
 @import "./scrollbar.scss";
 
 * {
 	box-sizing: border-box !important;
-	// 사용하는 폰트 추가
-	// font-family: "Mulish", sans-serif;
+	font-family: "Pretendard Variable", Pretendard, -apple-system,
+		BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+		"Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 input,
@@ -24,8 +24,10 @@ body,
 	padding: 0;
 	width: 100%;
 	height: 100%;
-	// 사용하는 폰트 추가
-	// font-family: "Mulish", sans-serif;
+	font-family: "Pretendard Variable", Pretendard, -apple-system,
+		BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+		"Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 	color: #0f0f0f;
 	background-color: #f6f6f6;
 }
@@ -52,6 +54,7 @@ button {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 }
+
 button:focus {
 	outline: none;
 }

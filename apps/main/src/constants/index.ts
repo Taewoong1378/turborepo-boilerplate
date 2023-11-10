@@ -1,1 +1,1 @@
-export * from './backendURL';
+export {};

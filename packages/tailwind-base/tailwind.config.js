@@ -1,9 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /** @type {import('tailwindcss').Config} */
-const colors = require('./src/styles/themes/colorObject');
-const text = require('./src/components/text');
-const reusable = require('./src/components/reusable');
 const plugin = require('tailwindcss/plugin');
+const colors = require('./src/styles/themes/colorObject');
 
 const createSize = (number) => {
   const obj = new Object();
@@ -15,33 +13,10 @@ const createSize = (number) => {
 
 module.exports = {
   mode: 'jit',
-  content: [
-    './src/**/*.{js,ts,jsx,tsx}',
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
-    './templates/**/*.{js,ts,jsx,tsx}',
-    './index.html',
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   jit: true,
   theme: {
-    keyframes: {
-      'loading-ani': {
-        '0%': {
-          backgroundColor: '#2B2929',
-        },
-        '40%': {
-          backgroundColor: '#6B6B6B',
-        },
-        '80%': {
-          backgroundColor: '#C0C0C0',
-        },
-      },
-    },
     colors,
-    fontFamily: {
-      Mulish: ['Mulish'],
-      Raleway: ['Raleway'],
-    },
     fontWeight: {
       regular: '400',
       semibold: '600',
@@ -70,8 +45,6 @@ module.exports = {
         '.x-scroll-touchable': {
           '-webkit-transform': 'translateZ(0)',
         },
-        ...text,
-        ...reusable,
       });
     }),
     require('tailwind-scrollbar-hide'),

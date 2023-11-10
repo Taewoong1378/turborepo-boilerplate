@@ -3,41 +3,103 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@components": ["src/components"],
-      "@components/*": ["src/components/*"],
-      "@analytics": ["src/analytics"],
-      "@analytics/*": ["src/analytics/*"],
-      "@data": ["src/data"],
-      "@data/*": ["src/data/*"],
-      "@templates": ["src/templates"],
-      "@templates/*": ["src/templates/*"],
-      "@constants": ["src/constants"],
-      "@constants/*": ["src/constants/*"],
-      "@config": ["src/config"],
-      "@config/*": ["src/config/*"],
-      "@assets": ["src/assets"],
-      "@assets/*": ["src/assets/*"],
-      "@hooks": ["src/hooks"],
-      "@hooks/*": ["src/hooks/*"],
-      "@styles": ["src/styles"],
-      "@styles/*": ["src/styles/*"],
-      "@types/*": ["src/types/*"],
-      "@themes": ["src/themes"],
-      "@themes/*": ["src/themes/*"],
-      "@utils": ["src/utils"],
-      "@utils/*": ["src/utils/*"],
-      "@pages/*": ["src/pages/*"],
-      "@recoilState": ["src/recoilState"],
-      "@recoilState/*": ["src/recoilState/*"],
-      "@apis": ["src/apis"],
-      "@apis/*": ["src/apis/*"]
+      "@analytics": [
+        "src/analytics"
+      ],
+      "@analytics/*": [
+        "src/analytics/*"
+      ],
+      "@apis": [
+        "src/apis"
+      ],
+      "@apis/*": [
+        "src/apis/*"
+      ],
+      "@assets": [
+        "src/assets"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@components": [
+        "src/components"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@config": [
+        "src/config"
+      ],
+      "@config/*": [
+        "src/config/*"
+      ],
+      "@constants": [
+        "src/constants"
+      ],
+      "@constants/*": [
+        "src/constants/*"
+      ],
+      "@data": [
+        "src/data"
+      ],
+      "@data/*": [
+        "src/data/*"
+      ],
+      "@hooks": [
+        "src/hooks"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@styles": [
+        "src/styles"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@containers": [
+        "src/containers"
+      ],
+      "@containers/*": [
+        "src/containers/*"
+      ],
+      "@themes": [
+        "src/themes"
+      ],
+      "@themes/*": [
+        "src/themes/*"
+      ],
+      "@types/*": [
+        "src/types/*"
+      ],
+      "@utils": [
+        "src/utils"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ]
     },
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "noEmit": true,
     "incremental": true,
     "resolveJsonModule": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", ".next", ".turbo"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next",
+    ".turbo"
+  ]
 }

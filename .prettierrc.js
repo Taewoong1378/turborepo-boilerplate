@@ -28,7 +28,7 @@ const tsOption = {
   importOrder: [
     '^re(.*)$',
     '<THIRD_PARTY_MODULES>',
-    '^@(?:components|templates|pages|containers)(.*)$',
+    '^@(?:components|containers|pages|containers)(.*)$',
     '^@(?:apis|interfaces|config)(.*)$',
     '^@(?:assets|constants|hooks|styles|utils|contexts)(.*)$',
     '^[./]',

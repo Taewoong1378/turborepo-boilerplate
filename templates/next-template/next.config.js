@@ -37,8 +37,8 @@ const nextConfig = {
       transform: '@hooks/{{ kebabCase member }}',
       skipDefaultConversion: true,
     },
-    '@templates': {
-      transform: '@templates/{{member}}',
+    '@containers': {
+      transform: '@containers/{{member}}',
       skipDefaultConversion: true,
     },
   },

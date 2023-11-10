@@ -13,12 +13,12 @@
     "@svgr/webpack": "^6.5.1",
     "@types/uuid": "^8.3.4",
     "crypto": "^1.0.1",
-    "crypto-js": "^4.1.1",
+    "crypto-js": "^4.2.0",
     "mammoth": "^1.6.0",
     "next-compose-plugins": "^2.2.1"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^13.4.13",
+    "@next/bundle-analyzer": "^13.5.6",
     "raw-loader": "^4.0.2",
     "webpack-shell-plugin-next": "^2.3.1"
   }
