@@ -9,7 +9,6 @@
     "tsc:check": "tsc -p tsconfig.json"
   },
   "devDependencies": {
-    "@trivago/prettier-plugin-sort-imports": "3.4.0",
     "nodemon": "^2.0.22",
     "postcss-cli": "^10.1.0"
   }
