@@ -1,4 +1,4 @@
-const fs = require('fs');
+import fs from 'fs';
 
 const icons: string[] = fs.readdirSync('../../packages/design-system/src/assets/icon');
 
