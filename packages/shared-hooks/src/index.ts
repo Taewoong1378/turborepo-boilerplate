@@ -1,1 +1,1 @@
-export * from './common';
+export * from './use-window-size';

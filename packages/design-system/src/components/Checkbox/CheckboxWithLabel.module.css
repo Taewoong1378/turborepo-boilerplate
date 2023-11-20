@@ -17,10 +17,10 @@
 }
 
 .checkboxLabel {
-	font-size: var(--font-p4);
-	line-height: var(--line-height-p4);
-	font-weight: var(--medium);
-	color: var(--greyScale10);
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 500;
+	color: #383852;
 	cursor: pointer;
 	padding: 6px 0;
 }
