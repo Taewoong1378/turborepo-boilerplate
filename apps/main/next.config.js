@@ -6,6 +6,14 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 });
 
 const nextConfig = {
+  experimental: {
+    optimizePackageImports: [
+      '@containers',
+      'shared-utils',
+      'shared-hooks',
+      'design-system',
+    ],
+  },
   swcMinify: true,
   compress: true,
   reactStrictMode: false,
@@ -22,24 +30,20 @@ const nextConfig = {
     defaultLocale: 'ko',
   },
   transpilePackages: ['shared-utils', 'shared-hooks', 'design-system'],
-  modularizeImports: {
-    '@components': {
-      transform: '@components/{{member}}',
-      skipDefaultConversion: true,
-    },
-    '@utils': {
-      transform: '@utils/{{ kebabCase member }}',
-      skipDefaultConversion: true,
-    },
-    '@hooks': {
-      transform: '@hooks/{{ kebabCase member }}',
-      skipDefaultConversion: true,
-    },
-    '@containers': {
-      transform: '@containers/{{member}}',
-      skipDefaultConversion: true,
-    },
-  },
+  // NOTICE : 만약 pageExtensions를 사용하고 싶다면 아래 주석을 해제하고 사용하면 된다.
+  // pageExtensions:
+  //   process.env.NEXT_PUBLIC_PLATFORM_ENV === 'production'
+  //     ? ['prod.tsx', 'prod.ts', 'prod.jsx', 'prod.js']
+  //     : [
+  //         'prod.tsx',
+  //         'prod.ts',
+  //         'prod.jsx',
+  //         'prod.js',
+  //         'dev.tsx',
+  //         'dev.ts',
+  //         'dev.jsx',
+  //         'dev.js',
+  //       ],
   webpack: (config) => {
     config.module.rules.push({
       test: /\.svg$/,
