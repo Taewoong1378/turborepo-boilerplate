@@ -3,103 +3,29 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@analytics": [
-        "src/analytics"
-      ],
-      "@analytics/*": [
-        "src/analytics/*"
-      ],
-      "@apis": [
-        "src/apis"
-      ],
-      "@apis/*": [
-        "src/apis/*"
-      ],
-      "@assets": [
-        "src/assets"
-      ],
-      "@assets/*": [
-        "src/assets/*"
-      ],
-      "@components": [
-        "src/components"
-      ],
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@config": [
-        "src/config"
-      ],
-      "@config/*": [
-        "src/config/*"
-      ],
-      "@constants": [
-        "src/constants"
-      ],
-      "@constants/*": [
-        "src/constants/*"
-      ],
-      "@data": [
-        "src/data"
-      ],
-      "@data/*": [
-        "src/data/*"
-      ],
-      "@hooks": [
-        "src/hooks"
-      ],
-      "@hooks/*": [
-        "src/hooks/*"
-      ],
-      "@pages/*": [
-        "src/pages/*"
-      ],
-      "@styles": [
-        "src/styles"
-      ],
-      "@styles/*": [
-        "src/styles/*"
-      ],
-      "@containers": [
-        "src/containers"
-      ],
-      "@containers/*": [
-        "src/containers/*"
-      ],
-      "@themes": [
-        "src/themes"
-      ],
-      "@themes/*": [
-        "src/themes/*"
-      ],
-      "@types/*": [
-        "src/types/*"
-      ],
-      "@utils": [
-        "src/utils"
-      ],
-      "@utils/*": [
-        "src/utils/*"
-      ]
+      "@analytics": ["src/analytics"],
+      "@analytics/*": ["src/analytics/*"],
+      "@apis": ["src/apis"],
+      "@apis/*": ["src/apis/*"],
+      "@assets": ["src/assets"],
+      "@assets/*": ["src/assets/*"],
+      "@constants": ["src/constants"],
+      "@constants/*": ["src/constants/*"],
+      "@data": ["src/data"],
+      "@data/*": ["src/data/*"],
+      "@pages/*": ["src/pages/*"],
+      "@styles": ["src/styles"],
+      "@styles/*": ["src/styles/*"],
+      "@containers": ["src/containers"],
+      "@containers/*": ["src/containers/*"],
+      "@types/*": ["src/types/*"]
     },
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "noEmit": true,
     "incremental": true,
     "resolveJsonModule": true
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules",
-    ".next",
-    ".turbo"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", ".next", ".turbo"]
 }
