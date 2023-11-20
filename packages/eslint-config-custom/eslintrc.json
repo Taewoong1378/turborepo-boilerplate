@@ -14,7 +14,9 @@
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": ["./tsconfig.json"],
+    "project": [
+      "./tsconfig.json"
+    ],
     "warnOnUnsupportedTypeScriptVersion": true,
     "ecmaFeatures": {
       "jsx": true
@@ -23,10 +25,22 @@
     "requireConfigFile": false,
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "react", "react-hooks", "import"],
-  "ignorePatterns": ["node_modules", "build/**/*"],
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "react-hooks",
+    "import"
+  ],
+  "ignorePatterns": [
+    "node_modules",
+    "build/**/*"
+  ],
   "rules": {
-    "@typescript-eslint/ban-types": ["warn"],
-    "@typescript-eslint/no-explicit-any": ["warn"]
+    "@typescript-eslint/ban-types": [
+      "warn"
+    ],
+    "@typescript-eslint/no-explicit-any": [
+      "warn"
+    ]
   }
 }
