@@ -69,6 +69,9 @@ importers:
       '@types/react-dom':
         specifier: ^18.2.15
         version: 18.2.15
+      '@types/uuid':
+        specifier: ^8.3.4
+        version: 8.3.4
       '@types/webpack-env':
         specifier: ^1.18.4
         version: 1.18.4
@@ -2257,7 +2260,6 @@ packages:
 
   /@types/uuid@8.3.4:
     resolution: {integrity: sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==}
-    dev: false
 
   /@types/webpack-env@1.18.4:
     resolution: {integrity: sha512-I6e+9+HtWADAWeeJWDFQtdk4EVSAbj6Rtz4q8fJ7mSr1M0jzlFcs8/HZ+Xb5SHzVm1dxH7aUiI+A8kA8Gcrm0A==}
