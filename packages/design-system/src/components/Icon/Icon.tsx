@@ -1,8 +1,6 @@
 import { SVGProps, useEffect, useState } from 'react';
-
 import classNames from 'classnames';
 import { Colors } from 'tailwind-base';
-
 import { iconMapping } from '../../assets/icon/icon-mapping';
 
 export type IconType = keyof typeof iconMapping;

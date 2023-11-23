@@ -1,5 +1,4 @@
 import classNames from 'classnames';
-
 import { Icon } from '../Icon';
 import { TAG_COLOR, TagProps } from './Tag.type';
 

@@ -1,5 +1,4 @@
 import { Colors } from 'tailwind-base';
-
 import { IconType } from '../Icon';
 
 export enum TAG_COLOR {

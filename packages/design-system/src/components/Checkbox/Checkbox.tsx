@@ -1,5 +1,4 @@
 import { useId } from 'react';
-
 import { Icon } from '../Icon';
 import styles from './Checkbox.module.css';
 import { CheckboxProps } from './Checkbox.type';

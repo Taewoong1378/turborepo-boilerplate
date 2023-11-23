@@ -1,7 +1,6 @@
 import { Analytics } from '@vercel/analytics/react';
 import 'design-system/public/tailwind-inject.css';
 import { AppProps } from 'next/app';
-
 import '../styles/scss/globals.scss';
 
 function MyApp(props: AppProps) {
@@ -9,7 +8,7 @@ function MyApp(props: AppProps) {
 
   return (
     <>
-      <div id='portal'></div>
+      <div id='portal' />
       <Component {...pageProps} />
       <Analytics />
     </>

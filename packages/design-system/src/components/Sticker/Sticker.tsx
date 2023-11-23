@@ -1,5 +1,4 @@
 import classNames from 'classnames';
-
 import { STICKER_COLOR, STICKER_SIZE, StickerProps } from './Sticker.type';
 
 export const Sticker = ({

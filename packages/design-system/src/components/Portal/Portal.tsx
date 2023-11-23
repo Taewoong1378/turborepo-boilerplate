@@ -1,8 +1,6 @@
 import { ReactNode, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-
 import { motion } from 'framer-motion';
-
 import styles from './Overlay.module.scss';
 
 interface PortalProps {

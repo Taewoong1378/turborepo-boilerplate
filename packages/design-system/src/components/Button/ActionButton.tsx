@@ -1,6 +1,5 @@
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
-
 import { Icon } from '../Icon';
 import { LoadingIconMedium } from '../LoadingIcon';
 

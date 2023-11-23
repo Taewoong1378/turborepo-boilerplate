@@ -90,12 +90,7 @@ const nextConfig = {
       config.plugins.push(new CompressionPlugin());
     } else {
       config.watchOptions = {
-        ignored: [
-          path.posix.resolve(
-            __dirname,
-            '../../packages/design-system/src/assets/icon',
-          ),
-        ],
+        ignored: [path.posix.resolve(__dirname, '../../packages/design-system/src/assets/icon')],
       };
     }
 
@@ -103,9 +98,7 @@ const nextConfig = {
       config.plugins.push(
         new WebpackShellPluginNext({
           onBeforeBuild: {
-            scripts: [
-              'ts-node ../../packages/design-system/src/scripts/create-icon-mapping.ts',
-            ],
+            scripts: ['ts-node ../../packages/design-system/src/scripts/create-icon-mapping.ts'],
             blocking: false,
             parallel: false,
           },

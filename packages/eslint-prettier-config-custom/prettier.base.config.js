@@ -19,7 +19,6 @@ const option = {
     '^[./]',
   ],
   plugins: ['@trivago/prettier-plugin-sort-imports', 'prettier-plugin-tailwindcss'],
-  pluginSearchDirs: false,
   importOrderSortSpecifiers: true,
 };
 

@@ -1,5 +1,4 @@
-import { useId } from 'react';
-
+import { v4 as uuidv4 } from 'uuid';
 import { Checkbox } from './Checkbox';
 import { CheckboxWithLabelProps } from './Checkbox.type';
 import styles from './CheckboxWithLabel.module.css';
@@ -9,7 +8,7 @@ export const CheckboxWithLabel = ({
   labelProps,
   ...checkboxProps
 }: CheckboxWithLabelProps) => {
-  const uid = checkboxProps.id || useId();
+  const uid = checkboxProps.id || uuidv4();
 
   return (
     <div className={styles.checkboxWithLabelWrap}>
