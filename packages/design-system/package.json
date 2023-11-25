@@ -9,7 +9,7 @@
     "tsc:check": "tsc -p tsconfig.json"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22",
+    "nodemon": "^3.0.1",
     "postcss-cli": "^10.1.0"
   }
 }
