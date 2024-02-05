@@ -40,7 +40,7 @@ module.exports = {
     borderWidth: createSize(10),
   },
   plugins: [
-    plugin(function ({ addComponents }) {
+    plugin(({ addComponents }) => {
       addComponents({
         '.x-scroll-touchable': {
           '-webkit-transform': 'translateZ(0)',
