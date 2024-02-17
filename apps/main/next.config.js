@@ -7,7 +7,13 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 const nextConfig = {
   experimental: {
-    optimizePackageImports: ['@containers', 'shared-utils', 'shared-hooks', 'design-system'],
+    optimizePackageImports: [
+      '@components',
+      '@shared',
+      'shared-utils',
+      'shared-hooks',
+      'design-system',
+    ],
   },
   swcMinify: true,
   compress: true,

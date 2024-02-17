@@ -1,5 +1,13 @@
-import { HomeContainer } from '@containers';
+import { Suspense } from 'react';
+import { ErrorBoundary } from '@shared/components';
+import { Header } from 'src/components';
 
 export default function HomePage() {
-  return <HomeContainer />;
+  return (
+    <ErrorBoundary>
+      <Suspense>
+        <Header />
+      </Suspense>
+    </ErrorBoundary>
+  );
 }

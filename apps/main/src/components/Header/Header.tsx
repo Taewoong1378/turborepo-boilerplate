@@ -1,7 +1,7 @@
-export const HomeContainer = () => {
+export const Header = () => {
   return (
     <main className='flex flex-col items-center justify-center'>
-      <div>Home</div>
+      <div>Header</div>
     </main>
   );
 };
