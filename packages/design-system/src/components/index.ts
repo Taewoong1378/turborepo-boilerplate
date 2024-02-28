@@ -6,3 +6,4 @@ export * from './Portal';
 export * from './Radio';
 export * from './Sticker';
 export * from './Tag';
+export * from './ToastBar';
