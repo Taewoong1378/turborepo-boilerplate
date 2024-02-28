@@ -1,7 +1,7 @@
 import { ReactNode, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { motion } from 'framer-motion';
-import styles from './Overlay.module.scss';
+import styles from './Portal.module.scss';
 
 interface PortalProps {
   children: ReactNode;
@@ -46,7 +46,7 @@ export const Portal = ({
               : { background: 'rgba(13, 19, 23, 0)' })
           }
           exit={{ background: initialColor ?? 'rgba(13, 19, 23, 0)' }}
-          className={styles.overlay}
+          className={styles.portal}
           style={position === 'initial' ? { position: 'initial' } : { position: 'fixed' }}>
           {isStopPrapagation ? (
             <div onClick={(e) => e.stopPropagation()}>{children}</div>

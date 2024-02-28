@@ -13,8 +13,8 @@ interface ActionButtonProps {
 export const ActionButton = ({ actionType, isActive, onClick, isLoading }: ActionButtonProps) => {
   const actionDetails = {
     Skip: {
-      borderColor: 'border-DTRed-400',
-      color: 'DTRed-400',
+      borderColor: 'border-red',
+      color: 'red',
       icon: 'skip',
       size: 24,
       label: 'Skip',
@@ -27,8 +27,8 @@ export const ActionButton = ({ actionType, isActive, onClick, isLoading }: Actio
       label: 'Regenerate',
     },
     Confirm: {
-      borderColor: 'border-DTPurple-400',
-      color: 'DTPurple-400',
+      borderColor: 'border-red',
+      color: 'red',
       icon: 'confirm',
       size: 12,
       label: 'Confirm',

@@ -1,16 +1,13 @@
 import { SVGProps, useEffect, useState } from 'react';
-import classNames from 'classnames';
 import { Colors } from 'tailwind-base';
 import { iconMapping } from '../../assets/icon/icon-mapping';
 
 export type IconType = keyof typeof iconMapping;
 
-const icons = require.context('../../assets/icon', true, /\.svg$/);
-
 export interface IconProps extends Omit<SVGProps<SVGSVGElement>, 'fill'> {
   icon: IconType;
-  color?: keyof typeof Colors;
   size?: number;
+  color?: keyof typeof Colors;
 }
 
 export const Icon = ({
@@ -27,11 +24,11 @@ export const Icon = ({
   );
 
   useEffect(() => {
-    import(`../../assets/icon/${iconComponent}.svg`)
+    import(`../../assets/icon/${String(iconComponent)}.svg`)
       .then((iconModule) => {
         setSvgIcon(() => iconModule.default);
       })
-      .catch((err) => console.error(`Icon not found: ${iconComponent}.svg`, err));
+      .catch((err) => console.error(`Icon not found: ${String(iconComponent)}.svg`, err));
   }, [iconComponent]);
 
   return (
@@ -41,8 +38,8 @@ export const Icon = ({
           {...props}
           width={width ?? size}
           height={height ?? size}
-          {...(color ? { fill: Colors[color] } : {})}
-          className={classNames('inline-block flex-shrink-0', className)}
+          {...(color ? { fill: Colors[color], stroke: Colors[color] } : {})}
+          className={`inline-block flex-shrink-0 ${className}`}
         />
       )}
     </>

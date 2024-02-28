@@ -1,8 +1,5 @@
 export enum STICKER_COLOR {
-  YELLOW = 'DTYellow-400',
-  // RED = 'DTRed-400',
-  // BLUE = 'DTBlue-400',
-  // GREEN = 'DTGreen-400',
+  RED = 'red',
 }
 
 export enum STICKER_SIZE {

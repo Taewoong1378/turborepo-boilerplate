@@ -1,11 +1,5 @@
-module.exports = {
-  /** @new 새롭게 사용될 컬러값입니다. */
-  'DTYellow-400': '#FFEB37',
-  'DTRed-400': '#E03E3E',
-  'DTBlue-400': '#4F7DFF',
-  'DTGreen-400': '#11AF22',
-  'DTPurple-400': '#483EA8',
-  'DTPurple-200': '#F8F8FF',
+export const Colors = {
+  red: '#FF0000',
   'gray-100': '#FAFAFA',
   'gray-150': '#F6F6F6',
   'gray-200': '#F0F0F0',

@@ -3,7 +3,7 @@ import { STICKER_COLOR, STICKER_SIZE, StickerProps } from './Sticker.type';
 
 export const Sticker = ({
   text,
-  color = STICKER_COLOR.YELLOW,
+  color = STICKER_COLOR.RED,
   size,
   className,
   ...props
