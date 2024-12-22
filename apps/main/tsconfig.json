@@ -3,31 +3,80 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@analytics": ["src/analytics"],
-      "@analytics/*": ["src/analytics/*"],
-      "@apis": ["src/apis"],
-      "@apis/*": ["src/apis/*"],
-      "@assets": ["src/assets"],
-      "@assets/*": ["src/assets/*"],
-      "@constants": ["src/constants"],
-      "@constants/*": ["src/constants/*"],
-      "@components": ["src/components"],
-      "@components/*": ["src/components/*"],
-      "@data": ["src/data"],
-      "@data/*": ["src/data/*"],
-      "@pages/*": ["src/pages/*"],
-      "@styles": ["src/styles"],
-      "@styles/*": ["src/styles/*"],
-      "@shared": ["src/shared"],
-      "@shared/*": ["src/shared/*"],
-      "@types/*": ["src/types/*"]
+      "@analytics": [
+        "src/analytics"
+      ],
+      "@analytics/*": [
+        "src/analytics/*"
+      ],
+      "@apis": [
+        "src/apis"
+      ],
+      "@apis/*": [
+        "src/apis/*"
+      ],
+      "@assets": [
+        "src/assets"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@constants": [
+        "src/constants"
+      ],
+      "@constants/*": [
+        "src/constants/*"
+      ],
+      "@components": [
+        "src/components"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@data": [
+        "src/data"
+      ],
+      "@data/*": [
+        "src/data/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@styles": [
+        "src/styles"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@shared": [
+        "src/shared"
+      ],
+      "@shared/*": [
+        "src/shared/*"
+      ],
+      "@types/*": [
+        "src/types/*"
+      ]
     },
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "noEmit": true,
     "incremental": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", ".next", ".turbo"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next",
+    ".turbo"
+  ]
 }

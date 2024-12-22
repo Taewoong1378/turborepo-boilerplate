@@ -1,4 +1,5 @@
 {
-  "**/*.{ts,tsx}": ["prettier --write", "eslint --fix"],
-  "**/*.{js,jsx,json,css,md,scss,sass,less,yml,yaml,html}": ["prettier --write"]
+	"**/*.{ts,tsx,js,jsx,json,css,md,scss,sass,less,yml,yaml,html}": [
+		"biome lint --diagnostic-level=error --write --unsafe --max-diagnostics 1000 2>&1"
+	]
 }

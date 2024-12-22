@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "ts-node ../../packages/design-system/src/scripts/create-icon-mapping.ts && next dev --port 3000",
-    "build": "ts-node ../../packages/design-system/src/scripts/create-icon-mapping.ts && next build",
+    "dev": "next dev --port 3000",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "tsc:check": "tsc -p tsconfig.json"

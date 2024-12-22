@@ -1,1 +1,3 @@
-module.exports = require('tailwind-base/tailwind.config.js');
+import tailwindConfig from 'tailwind-base/tailwind.config.js';
+
+export default tailwindConfig;
